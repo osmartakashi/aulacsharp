@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AulaCSharp", "AulaCSharp\AulaCSharp.csproj", "{ECAB3B79-8D76-4F6E-A361-22D89A4BF83B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		MeuDebug|Any CPU = MeuDebug|Any CPU
+		MeuDebug|x86 = MeuDebug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECAB3B79-8D76-4F6E-A361-22D89A4BF83B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAB3B79-8D76-4F6E-A361-22D89A4BF83B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAB3B79-8D76-4F6E-A361-22D89A4BF83B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ECAB3B79-8D76-4F6E-A361-22D89A4BF83B}.Debug|x86.Build.0 = Debug|Any CPU
+		{ECAB3B79-8D76-4F6E-A361-22D89A4BF83B}.MeuDebug|Any CPU.ActiveCfg = MeuDebug|Any CPU
+		{ECAB3B79-8D76-4F6E-A361-22D89A4BF83B}.MeuDebug|Any CPU.Build.0 = MeuDebug|Any CPU
+		{ECAB3B79-8D76-4F6E-A361-22D89A4BF83B}.MeuDebug|x86.ActiveCfg = MeuDebug|Any CPU
+		{ECAB3B79-8D76-4F6E-A361-22D89A4BF83B}.MeuDebug|x86.Build.0 = MeuDebug|Any CPU
+		{ECAB3B79-8D76-4F6E-A361-22D89A4BF83B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAB3B79-8D76-4F6E-A361-22D89A4BF83B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECAB3B79-8D76-4F6E-A361-22D89A4BF83B}.Release|x86.ActiveCfg = Release|Any CPU
+		{ECAB3B79-8D76-4F6E-A361-22D89A4BF83B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB742F8C-928A-4192-A10A-6ED5D22D6A20}
+	EndGlobalSection
+EndGlobal
