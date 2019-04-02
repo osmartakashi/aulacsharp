@@ -1,0 +1,9 @@
+﻿Um grande banco gostaria de alterar seu sistema. Para isso eles solicitaram que
+fosse implementado uma nova lógica para o gerenciamento de saques e investimentos para
+contas de pessoa física. Existem 3 tipos de contas, conta corrente, conta poupança e conta investimento.
+Cada tipo de conta possui um método para efetuar o saque, depósitos e verificar o saldo.
+Para a conta corrente: A cada saque efetuado é debitado automaticamente R$2,00 de tarifa de saque.
+Para a conta investimento: A casa saque efetuado é debitado automaticamente R$1,50 de tarifa de saque.
+A conta poupança não é taxada no saque.
+Além disso, as contas corrente e investimento são tributáveis a cada operação, seja de saque ou depósito. A taxa é 0,25% sobre
+cada operação realizada. Esse cálculo deverá estar embutido em todas as operações.
