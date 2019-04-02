@@ -59,5 +59,8 @@
   <ItemGroup>
     <Folder Include="Repositorios\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Script\banco.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

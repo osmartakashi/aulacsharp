@@ -1,0 +1,20 @@
+﻿create table Cliente
+(
+IdCliente bigint not null primary key identity(1,1),
+Nome varchar(200) not null,
+Sobrenome varchar(200) not null,
+Cpf varchar(20) not null,
+Rg varchar(20) not null,
+DataNascimento datetime not null
+)
+
+create table Conta
+(
+IdConta bigint not null primary key identity(1,1),
+IdCliente bigint not null foreign key references Cliente(IdCliente),
+DataAbertura datetime not null,
+DataEncerramento datetime null,
+Saldo decimal not null,
+TipoConta tinyint not null,
+NumeroConta varchar(10) not null
+)
