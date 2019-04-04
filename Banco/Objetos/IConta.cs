@@ -12,10 +12,12 @@ namespace Banco.Objetos
     /// </summary>
     public interface IConta
     {
+        long IdConta { get; set; }
         decimal Saldo { get; set; }
         DateTime DataAbertura { get; set; }
         DateTime DataEncerramento { get; set; }
         string NumeroConta { get; set; }
+        Cliente cliente { get; set; }
 
         decimal VerificarSaldo();
 

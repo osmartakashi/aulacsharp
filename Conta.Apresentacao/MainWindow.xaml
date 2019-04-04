@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Conta.Apresentacao"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="450">
+
+    <StackPanel HorizontalAlignment="Left" Height="408" Margin="0,10,0,0" VerticalAlignment="Top" Width="440">
+        <Menu IsMainMenu="True" Background="AliceBlue">
+            <MenuItem Header="Novo Cliente" Click="MenuItemNovoCliente_OnClick"></MenuItem>
+            <MenuItem Header="Cliente Existente" Click="MenuItemClienteExistente_OnClick"></MenuItem>
+            <MenuItem Header="Sair" Click="MenuItem_OnClick"></MenuItem>
+        </Menu>
+        <!--<Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" ></ColumnDefinition>
+                <ColumnDefinition Width="*" ></ColumnDefinition>
+                <ColumnDefinition Width="*" ></ColumnDefinition>
+                <ColumnDefinition Width="*" ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content=""></Label>
+        </Grid>-->
+    </StackPanel>
 </Window>

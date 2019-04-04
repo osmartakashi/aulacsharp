@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Banco.Repositorios;
 
 namespace Banco.Objetos
 {
-    class ContaInvestimento : IConta, ITributavel
+    public class ContaInvestimento : IConta, ITributavel
     {
         //public override void EfetuarDeposito(decimal valor)
         //{
@@ -21,11 +22,18 @@ namespace Banco.Objetos
         //    Saldo -= valor;
         //    return Saldo;
         //}
+        private IBancoRepositorio _repositorio;
 
+        public ContaInvestimento()
+        {
+            _repositorio = new BancoRepositorio();
+        }
+        public long IdConta { get; set; }
         public decimal Saldo { get; set; }
         public DateTime DataAbertura { get; set; }
         public DateTime DataEncerramento { get; set; }
         public string NumeroConta { get; set; }
+        public Cliente cliente { get; set; }
 
         public decimal VerificarSaldo()
         {

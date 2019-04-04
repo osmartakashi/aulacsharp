@@ -24,5 +24,24 @@ namespace Conta.Apresentacao
         {
             InitializeComponent();
         }
+
+        private void MenuItem_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MenuItemClienteExistente_OnClick(object sender, RoutedEventArgs e)
+        {
+            var windowsCliExistente = new ClienteExistenteWindow();
+            windowsCliExistente.WindowStartupLocation = this.WindowStartupLocation;
+            windowsCliExistente.Show();
+        }
+
+        private void MenuItemNovoCliente_OnClick(object sender, RoutedEventArgs e)
+        {
+            var windowNovoCli = new NovoClienteWindows();
+            windowNovoCli.WindowStartupLocation = this.WindowStartupLocation;
+            windowNovoCli.Show();
+        }
     }
 }
