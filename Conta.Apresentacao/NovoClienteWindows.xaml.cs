@@ -44,6 +44,9 @@ namespace Conta.Apresentacao
                 case "Conta Corrente":
                      conta = new ContaCorrente();
                     conta.cliente = cliente;
+                     var ramdom = new Random();
+                     conta.DataAbertura = DateTime.Now;
+                     conta.NumeroConta = ramdom.Next(1, 100).ToString();
                      conta.Saldo = Convert.ToDecimal(this.txtDepositoInicial.Text);
                     break;
                 case "Conta Poupança":
