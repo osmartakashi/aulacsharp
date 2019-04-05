@@ -9,19 +9,6 @@ namespace Banco.Objetos
 {
     public class ContaInvestimento : IConta, ITributavel
     {
-        //public override void EfetuarDeposito(decimal valor)
-        //{
-        //    Saldo -= valor * 0.25m / 100;
-        //    Saldo += valor;
-        //}
-
-        //public override decimal EfetuarSaque(decimal valor)
-        //{
-        //    Saldo -= 1.50m;
-        //    Saldo -= valor * 0.25m / 100;
-        //    Saldo -= valor;
-        //    return Saldo;
-        //}
         private IBancoRepositorio _repositorio;
 
         public ContaInvestimento()

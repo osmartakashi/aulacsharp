@@ -6,7 +6,36 @@
         xmlns:local="clr-namespace:Conta.Apresentacao"
         mc:Ignorable="d"
         Title="ClienteExistenteWindow" Height="450" Width="450">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <Grid Name="gridPesquisa">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+              
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" ></ColumnDefinition>
+                <ColumnDefinition Width="*" ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Name="lblUsuario"    Margin="30 5 0 5" Grid.Row="0" Grid.Column="0" Content="Identificação" ></Label>
+            <TextBox Name="txtUsuario" Margin="5 5 5 5"  Grid.Row="0" Grid.Column="1"></TextBox>
+
+            <Label Name="lblVlSaque"  Margin="30 5 0 5" Grid.Row="1" Grid.Column="0" Content="Valor Saque" ></Label>
+            <TextBox Name="txtVlSaque" Margin="5 5 5 5"  Grid.Row="1" Grid.Column="1"></TextBox>
+
+            <Label Name="lblVlDeposito"  Margin="30 5 0 5" Grid.Row="2" Grid.Column="0" Content="Valor Deposito" ></Label>
+            <TextBox Name="txtVlDeposito" Margin="5 5 5 5"  Grid.Row="2" Grid.Column="1"></TextBox>
+
+          
+
+
+        </Grid>
+        <Button Name="btnSacar" Content="Sacar" Margin="5 5 5 5" Click="BtnSacar_Click"></Button>
+        <Button Name="btnDepositar" Content="Depositar" Margin="5 5 5 5"></Button>
+        <Button Name="btnSaldo" Content="Verificar Saldo" Margin="5 5 5 5"></Button>
+   
+    </StackPanel>
+ 
 </Window>

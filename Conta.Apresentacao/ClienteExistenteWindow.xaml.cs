@@ -23,5 +23,10 @@ namespace Conta.Apresentacao
         {
             InitializeComponent();
         }
+
+        private void BtnSacar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
