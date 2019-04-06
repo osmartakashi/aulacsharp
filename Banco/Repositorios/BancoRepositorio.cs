@@ -9,6 +9,7 @@ namespace Banco.Repositorios
 {
     public class BancoRepositorio : IBancoRepositorio
     {
+
         public void CadastrarCliente(Cliente cliente)
         {
             throw new NotImplementedException();

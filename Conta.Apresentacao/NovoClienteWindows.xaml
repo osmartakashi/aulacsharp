@@ -48,7 +48,7 @@
             <Label Name="lblDepositoInicial" Margin="30 5 0 5" Content="Depósito Inicial" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Left"></Label>
             <TextBox Name="txtDepositoInicial" Grid.Column="1" Margin="5 5 5 5" Grid.Row="7"></TextBox>
             <Button Content="Salvar" Margin="5 5 5 5"  FontSize="19" Grid.ColumnSpan="2" Grid.Row="8" Click="BtnSalvar_Click"/>
-            <Button Content="Cancelar" Margin="5 5 5 5"  FontSize="19" Grid.ColumnSpan="2" Grid.Row="9"/>
+            <Button Content="Cancelar" Margin="5 5 5 5"  FontSize="19" Grid.ColumnSpan="2" Grid.Row="9" />
             <Button Content="Limpar Campos" Margin="5 5 5 5"  FontSize="19" Grid.ColumnSpan="2" Grid.Row="10"/>
         </Grid>
         
