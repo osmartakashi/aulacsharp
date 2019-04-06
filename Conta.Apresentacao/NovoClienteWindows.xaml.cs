@@ -47,6 +47,7 @@ namespace Conta.Apresentacao
                      var ramdom = new Random();
                      conta.DataAbertura = DateTime.Now;
                      conta.NumeroConta = ramdom.Next(1, 100).ToString();
+                     conta.DataEncerramento = null;
                      conta.Saldo = Convert.ToDecimal(this.txtDepositoInicial.Text);
                     break;
                 case "Conta Poupança":
@@ -58,9 +59,20 @@ namespace Conta.Apresentacao
                     conta.cliente = cliente;
                     break;
             }
-            gestorConta.AddNovaConta(conta);
 
-            MessageBox.Show("Salvando Cliente novo");
+            try
+            {
+                gestorConta.AddNovaConta(conta);
+                MessageBox.Show("Cliente salvo com sucesso!");
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Ocorreu um erro ao inserir o cliente");
+                
+            }
+          
+
+            
         }
 
     }

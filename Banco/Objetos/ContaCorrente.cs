@@ -42,11 +42,16 @@ namespace Banco.Objetos
             _repositorio = new BancoRepositorio();
         }
         public long IdConta { get; set; }
+        public long IdCliente { get; set; }
         public decimal Saldo { get; set; }
         public DateTime DataAbertura { get; set; }
-        public DateTime DataEncerramento { get; set; }
+        public DateTime? DataEncerramento { get; set; }
         public string NumeroConta { get; set; }
         public Cliente cliente { get; set; }
+        public TipoConta tipoConta
+        {
+            get { return TipoConta.ContaCorrente; }
+        }
 
         public decimal VerificarSaldo()
         {
